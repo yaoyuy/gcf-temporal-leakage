@@ -1,0 +1,448 @@
+{
+"grid_edges": [
+[
+"ml-1m",
+"random",
+"ItemKNN",
+"50"
+],
+[
+"ml-1m",
+"loo",
+"ItemKNN",
+"50"
+],
+[
+"ml-1m",
+"global_temporal",
+"ItemKNN",
+"500"
+],
+[
+"ml-1m",
+"global_temporal",
+"EASE",
+"5000"
+],
+[
+"amz-games",
+"random",
+"ItemKNN",
+"500"
+],
+[
+"amz-games",
+"loo",
+"ItemKNN",
+"500"
+],
+[
+"amz-games",
+"global_temporal",
+"ItemKNN",
+"500"
+],
+[
+"amz-music",
+"random",
+"ItemKNN",
+"500"
+],
+[
+"amz-music",
+"loo",
+"ItemKNN",
+"500"
+],
+[
+"amz-music",
+"global_temporal",
+"ItemKNN",
+"500"
+],
+[
+"amz-music",
+"global_temporal",
+"EASE",
+"1000"
+],
+[
+"gowalla",
+"random",
+"ItemKNN",
+"500"
+],
+[
+"gowalla",
+"loo",
+"ItemKNN",
+"500"
+],
+[
+"gowalla",
+"global_temporal",
+"ItemKNN",
+"500"
+]
+],
+"ml-1m|warm|NDCG@20|tau|random-global_temporal": 0.467,
+"ml-1m|warm|NDCG@20|tau|loo-global_temporal": 0.467,
+"ml-1m|warm|NDCG@20|tau|random-loo": 1.0,
+"ml-1m|warm|Recall@20|tau|random-global_temporal": 0.733,
+"ml-1m|warm|Recall@20|tau|loo-global_temporal": 0.733,
+"ml-1m|warm|Recall@20|tau|random-loo": 1.0,
+"ml-1m|warm|NDCG@20|order|random": "EASE 0.3210 > LightGCN 0.2852 > BPR-MF 0.2565 > ItemKNN 0.2283 > SimGCL 0.1653 > MostPop 0.1339",
+"ml-1m|warm|Recall@20|order|random": "EASE 0.2994 > LightGCN 0.2699 > BPR-MF 0.2397 > ItemKNN 0.2077 > SimGCL 0.1809 > MostPop 0.1202",
+"ml-1m|warm|gapLG-EASE%|random": -11.2,
+"ml-1m|warm|NDCG@20|order|loo": "EASE 0.0626 > LightGCN 0.0578 > BPR-MF 0.0529 > ItemKNN 0.0463 > SimGCL 0.0415 > MostPop 0.0258",
+"ml-1m|warm|Recall@20|order|loo": "EASE 0.1587 > LightGCN 0.1485 > BPR-MF 0.1363 > ItemKNN 0.1106 > SimGCL 0.1066 > MostPop 0.0681",
+"ml-1m|warm|gapLG-EASE%|loo": -7.6,
+"ml-1m|warm|NDCG@20|order|global_temporal": "LightGCN 0.2625 > BPR-MF 0.2578 > EASE 0.2550 > MostPop 0.2345 > ItemKNN 0.2345 > SimGCL 0.1450",
+"ml-1m|warm|Recall@20|order|global_temporal": "EASE 0.0842 > LightGCN 0.0835 > BPR-MF 0.0815 > MostPop 0.0685 > ItemKNN 0.0633 > SimGCL 0.0499",
+"ml-1m|warm|gapLG-EASE%|global_temporal": 2.9,
+"ml-1m|full|NDCG@20|tau|random-global_temporal": 0.6,
+"ml-1m|full|NDCG@20|tau|loo-global_temporal": 0.6,
+"ml-1m|full|NDCG@20|tau|random-loo": 1.0,
+"ml-1m|full|Recall@20|tau|random-global_temporal": 0.733,
+"ml-1m|full|Recall@20|tau|loo-global_temporal": 0.733,
+"ml-1m|full|Recall@20|tau|random-loo": 1.0,
+"ml-1m|full|NDCG@20|order|random": "EASE 0.3209 > LightGCN 0.2851 > BPR-MF 0.2565 > ItemKNN 0.2283 > SimGCL 0.1653 > MostPop 0.1339",
+"ml-1m|full|Recall@20|order|random": "EASE 0.2993 > LightGCN 0.2699 > BPR-MF 0.2397 > ItemKNN 0.2077 > SimGCL 0.1809 > MostPop 0.1202",
+"ml-1m|full|gapLG-EASE%|random": -11.2,
+"ml-1m|full|NDCG@20|order|loo": "EASE 0.0626 > LightGCN 0.0578 > BPR-MF 0.0529 > ItemKNN 0.0463 > SimGCL 0.0415 > MostPop 0.0258",
+"ml-1m|full|Recall@20|order|loo": "EASE 0.1586 > LightGCN 0.1484 > BPR-MF 0.1362 > ItemKNN 0.1106 > SimGCL 0.1066 > MostPop 0.0680",
+"ml-1m|full|gapLG-EASE%|loo": -7.6,
+"ml-1m|full|NDCG@20|order|global_temporal": "LightGCN 0.2188 > BPR-MF 0.2150 > EASE 0.2126 > ItemKNN 0.1955 > MostPop 0.1955 > SimGCL 0.1209",
+"ml-1m|full|Recall@20|order|global_temporal": "EASE 0.0702 > LightGCN 0.0695 > BPR-MF 0.0678 > MostPop 0.0570 > ItemKNN 0.0527 > SimGCL 0.0415",
+"ml-1m|full|gapLG-EASE%|global_temporal": 2.9,
+"ml-1m|random|train_after_user_first_test_pct": [
+93.4,
+93.36,
+93.49
+],
+"ml-1m|random|train_after_global_cut_pct": [
+20.01,
+19.97,
+20.04
+],
+"ml-1m|random|test_cold_rows_pct": [
+0.02,
+0.01,
+0.03
+],
+"ml-1m|random|val_cold_rows_pct": [
+0.02,
+0.01,
+0.02
+],
+"ml-1m|loo|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"ml-1m|loo|train_after_global_cut_pct": [
+19.89,
+19.89,
+19.89
+],
+"ml-1m|loo|test_cold_rows_pct": [
+0.03,
+0.03,
+0.03
+],
+"ml-1m|loo|val_cold_rows_pct": [
+0.0,
+0.0,
+0.0
+],
+"ml-1m|global_temporal|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"ml-1m|global_temporal|train_after_global_cut_pct": [
+0.0,
+0.0,
+0.0
+],
+"ml-1m|global_temporal|test_cold_rows_pct": [
+19.41,
+19.41,
+19.41
+],
+"ml-1m|global_temporal|val_cold_rows_pct": [
+76.16,
+76.16,
+76.16
+],
+"amz-games|warm|NDCG@20|tau|random-global_temporal": 0.2,
+"amz-games|warm|NDCG@20|tau|loo-global_temporal": 0.2,
+"amz-games|warm|NDCG@20|tau|random-loo": 1.0,
+"amz-games|warm|Recall@20|tau|random-global_temporal": 0.467,
+"amz-games|warm|Recall@20|tau|loo-global_temporal": 0.467,
+"amz-games|warm|Recall@20|tau|random-loo": 1.0,
+"amz-games|warm|NDCG@20|order|random": "EASE 0.0845 > SimGCL 0.0702 > LightGCN 0.0637 > ItemKNN 0.0596 > BPR-MF 0.0384 > MostPop 0.0186",
+"amz-games|warm|Recall@20|order|random": "EASE 0.1589 > SimGCL 0.1398 > LightGCN 0.1317 > ItemKNN 0.1119 > BPR-MF 0.0805 > MostPop 0.0413",
+"amz-games|warm|gapLG-EASE%|random": -24.7,
+"amz-games|warm|NDCG@20|order|loo": "EASE 0.0414 > SimGCL 0.0387 > LightGCN 0.0376 > ItemKNN 0.0259 > BPR-MF 0.0206 > MostPop 0.0159",
+"amz-games|warm|Recall@20|order|loo": "EASE 0.0894 > SimGCL 0.0851 > LightGCN 0.0845 > ItemKNN 0.0578 > BPR-MF 0.0483 > MostPop 0.0380",
+"amz-games|warm|gapLG-EASE%|loo": -9.1,
+"amz-games|warm|NDCG@20|order|global_temporal": "LightGCN 0.0161 > SimGCL 0.0158 > MostPop 0.0114 > EASE 0.0113 > ItemKNN 0.0060 > BPR-MF 0.0057",
+"amz-games|warm|Recall@20|order|global_temporal": "SimGCL 0.0322 > LightGCN 0.0317 > EASE 0.0237 > MostPop 0.0231 > ItemKNN 0.0135 > BPR-MF 0.0122",
+"amz-games|warm|gapLG-EASE%|global_temporal": 42.1,
+"amz-games|full|NDCG@20|tau|random-global_temporal": 0.467,
+"amz-games|full|NDCG@20|tau|loo-global_temporal": 0.467,
+"amz-games|full|NDCG@20|tau|random-loo": 1.0,
+"amz-games|full|Recall@20|tau|random-global_temporal": 0.467,
+"amz-games|full|Recall@20|tau|loo-global_temporal": 0.467,
+"amz-games|full|Recall@20|tau|random-loo": 1.0,
+"amz-games|full|NDCG@20|order|random": "EASE 0.0845 > SimGCL 0.0701 > LightGCN 0.0637 > ItemKNN 0.0596 > BPR-MF 0.0384 > MostPop 0.0186",
+"amz-games|full|Recall@20|order|random": "EASE 0.1589 > SimGCL 0.1398 > LightGCN 0.1317 > ItemKNN 0.1119 > BPR-MF 0.0805 > MostPop 0.0413",
+"amz-games|full|gapLG-EASE%|random": -24.7,
+"amz-games|full|NDCG@20|order|loo": "EASE 0.0413 > SimGCL 0.0385 > LightGCN 0.0375 > ItemKNN 0.0258 > BPR-MF 0.0205 > MostPop 0.0158",
+"amz-games|full|Recall@20|order|loo": "EASE 0.0891 > SimGCL 0.0848 > LightGCN 0.0842 > ItemKNN 0.0576 > BPR-MF 0.0481 > MostPop 0.0379",
+"amz-games|full|gapLG-EASE%|loo": -9.1,
+"amz-games|full|NDCG@20|order|global_temporal": "SimGCL 0.0043 > LightGCN 0.0043 > EASE 0.0031 > MostPop 0.0030 > ItemKNN 0.0016 > BPR-MF 0.0015",
+"amz-games|full|Recall@20|order|global_temporal": "SimGCL 0.0081 > LightGCN 0.0078 > EASE 0.0058 > MostPop 0.0055 > ItemKNN 0.0032 > BPR-MF 0.0030",
+"amz-games|full|gapLG-EASE%|global_temporal": 39.5,
+"amz-games|random|train_after_user_first_test_pct": [
+37.07,
+36.99,
+37.23
+],
+"amz-games|random|train_after_global_cut_pct": [
+19.99,
+19.97,
+20.02
+],
+"amz-games|random|test_cold_rows_pct": [
+0.04,
+0.02,
+0.07
+],
+"amz-games|random|val_cold_rows_pct": [
+0.03,
+0.02,
+0.04
+],
+"amz-games|loo|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-games|loo|train_after_global_cut_pct": [
+14.68,
+14.68,
+14.68
+],
+"amz-games|loo|test_cold_rows_pct": [
+0.36,
+0.36,
+0.36
+],
+"amz-games|loo|val_cold_rows_pct": [
+0.17,
+0.17,
+0.17
+],
+"amz-games|global_temporal|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-games|global_temporal|train_after_global_cut_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-games|global_temporal|test_cold_rows_pct": [
+82.69,
+82.69,
+82.69
+],
+"amz-games|global_temporal|val_cold_rows_pct": [
+49.28,
+49.28,
+49.28
+],
+"amz-music|warm|NDCG@20|tau|random-global_temporal": 0.733,
+"amz-music|warm|NDCG@20|tau|loo-global_temporal": 0.867,
+"amz-music|warm|NDCG@20|tau|random-loo": 0.867,
+"amz-music|warm|Recall@20|tau|random-global_temporal": 0.733,
+"amz-music|warm|Recall@20|tau|loo-global_temporal": 1.0,
+"amz-music|warm|Recall@20|tau|random-loo": 0.733,
+"amz-music|warm|NDCG@20|order|random": "EASE 0.0494 > LightGCN 0.0436 > SimGCL 0.0426 > MostPop 0.0221 > ItemKNN 0.0206 > BPR-MF 0.0135",
+"amz-music|warm|Recall@20|order|random": "EASE 0.0950 > LightGCN 0.0890 > SimGCL 0.0845 > MostPop 0.0469 > ItemKNN 0.0394 > BPR-MF 0.0290",
+"amz-music|warm|gapLG-EASE%|random": -11.6,
+"amz-music|warm|NDCG@20|order|loo": "LightGCN 0.0315 > EASE 0.0304 > SimGCL 0.0292 > MostPop 0.0168 > ItemKNN 0.0109 > BPR-MF 0.0103",
+"amz-music|warm|Recall@20|order|loo": "LightGCN 0.0720 > EASE 0.0659 > SimGCL 0.0637 > MostPop 0.0398 > BPR-MF 0.0247 > ItemKNN 0.0246",
+"amz-music|warm|gapLG-EASE%|loo": 3.4,
+"amz-music|warm|NDCG@20|order|global_temporal": "LightGCN 0.0166 > EASE 0.0149 > SimGCL 0.0146 > MostPop 0.0135 > BPR-MF 0.0057 > ItemKNN 0.0046",
+"amz-music|warm|Recall@20|order|global_temporal": "LightGCN 0.0329 > EASE 0.0295 > SimGCL 0.0291 > MostPop 0.0243 > BPR-MF 0.0122 > ItemKNN 0.0095",
+"amz-music|warm|gapLG-EASE%|global_temporal": 11.6,
+"amz-music|full|NDCG@20|tau|random-global_temporal": 0.733,
+"amz-music|full|NDCG@20|tau|loo-global_temporal": 0.867,
+"amz-music|full|NDCG@20|tau|random-loo": 0.867,
+"amz-music|full|Recall@20|tau|random-global_temporal": 0.733,
+"amz-music|full|Recall@20|tau|loo-global_temporal": 1.0,
+"amz-music|full|Recall@20|tau|random-loo": 0.733,
+"amz-music|full|NDCG@20|order|random": "EASE 0.0493 > LightGCN 0.0436 > SimGCL 0.0426 > MostPop 0.0221 > ItemKNN 0.0206 > BPR-MF 0.0135",
+"amz-music|full|Recall@20|order|random": "EASE 0.0949 > LightGCN 0.0889 > SimGCL 0.0845 > MostPop 0.0469 > ItemKNN 0.0394 > BPR-MF 0.0290",
+"amz-music|full|gapLG-EASE%|random": -11.6,
+"amz-music|full|NDCG@20|order|loo": "LightGCN 0.0314 > EASE 0.0304 > SimGCL 0.0291 > MostPop 0.0168 > ItemKNN 0.0108 > BPR-MF 0.0103",
+"amz-music|full|Recall@20|order|loo": "LightGCN 0.0718 > EASE 0.0657 > SimGCL 0.0636 > MostPop 0.0398 > BPR-MF 0.0247 > ItemKNN 0.0246",
+"amz-music|full|gapLG-EASE%|loo": 3.4,
+"amz-music|full|NDCG@20|order|global_temporal": "LightGCN 0.0110 > EASE 0.0100 > SimGCL 0.0098 > MostPop 0.0089 > BPR-MF 0.0038 > ItemKNN 0.0031",
+"amz-music|full|Recall@20|order|global_temporal": "LightGCN 0.0214 > EASE 0.0194 > SimGCL 0.0189 > MostPop 0.0158 > BPR-MF 0.0079 > ItemKNN 0.0062",
+"amz-music|full|gapLG-EASE%|global_temporal": 10.1,
+"amz-music|random|train_after_user_first_test_pct": [
+37.82,
+37.7,
+37.92
+],
+"amz-music|random|train_after_global_cut_pct": [
+20.01,
+19.98,
+20.04
+],
+"amz-music|random|test_cold_rows_pct": [
+0.03,
+0.01,
+0.06
+],
+"amz-music|random|val_cold_rows_pct": [
+0.03,
+0.01,
+0.06
+],
+"amz-music|loo|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-music|loo|train_after_global_cut_pct": [
+14.86,
+14.86,
+14.86
+],
+"amz-music|loo|test_cold_rows_pct": [
+0.18,
+0.18,
+0.18
+],
+"amz-music|loo|val_cold_rows_pct": [
+0.11,
+0.11,
+0.11
+],
+"amz-music|global_temporal|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-music|global_temporal|train_after_global_cut_pct": [
+0.0,
+0.0,
+0.0
+],
+"amz-music|global_temporal|test_cold_rows_pct": [
+55.03,
+55.03,
+55.03
+],
+"amz-music|global_temporal|val_cold_rows_pct": [
+28.06,
+28.06,
+28.06
+],
+"gowalla|warm|NDCG@20|tau|random-global_temporal": 0.6,
+"gowalla|warm|NDCG@20|tau|loo-global_temporal": 0.733,
+"gowalla|warm|NDCG@20|tau|random-loo": 0.867,
+"gowalla|warm|Recall@20|tau|random-global_temporal": 0.733,
+"gowalla|warm|Recall@20|tau|loo-global_temporal": 0.867,
+"gowalla|warm|Recall@20|tau|random-loo": 0.867,
+"gowalla|warm|NDCG@20|order|random": "EASE 0.1786 > SimGCL 0.1611 > LightGCN 0.1533 > ItemKNN 0.1434 > BPR-MF 0.1188 > MostPop 0.0273",
+"gowalla|warm|Recall@20|order|random": "EASE 0.2475 > SimGCL 0.2287 > LightGCN 0.2198 > ItemKNN 0.2029 > BPR-MF 0.1752 > MostPop 0.0442",
+"gowalla|warm|gapLG-EASE%|random": -14.2,
+"gowalla|warm|NDCG@20|order|loo": "EASE 0.0686 > SimGCL 0.0653 > LightGCN 0.0647 > BPR-MF 0.0540 > ItemKNN 0.0522 > MostPop 0.0192",
+"gowalla|warm|Recall@20|order|loo": "EASE 0.1525 > SimGCL 0.1462 > LightGCN 0.1432 > BPR-MF 0.1212 > ItemKNN 0.1168 > MostPop 0.0482",
+"gowalla|warm|gapLG-EASE%|loo": -5.6,
+"gowalla|warm|NDCG@20|order|global_temporal": "LightGCN 0.0772 > EASE 0.0772 > SimGCL 0.0727 > BPR-MF 0.0663 > ItemKNN 0.0586 > MostPop 0.0265",
+"gowalla|warm|Recall@20|order|global_temporal": "EASE 0.1209 > LightGCN 0.1183 > SimGCL 0.1157 > BPR-MF 0.1014 > ItemKNN 0.0944 > MostPop 0.0431",
+"gowalla|warm|gapLG-EASE%|global_temporal": 0.1,
+"gowalla|full|NDCG@20|tau|random-global_temporal": 0.6,
+"gowalla|full|NDCG@20|tau|loo-global_temporal": 0.733,
+"gowalla|full|NDCG@20|tau|random-loo": 0.867,
+"gowalla|full|Recall@20|tau|random-global_temporal": 0.733,
+"gowalla|full|Recall@20|tau|loo-global_temporal": 0.867,
+"gowalla|full|Recall@20|tau|random-loo": 0.867,
+"gowalla|full|NDCG@20|order|random": "EASE 0.1786 > SimGCL 0.1611 > LightGCN 0.1533 > ItemKNN 0.1434 > BPR-MF 0.1188 > MostPop 0.0273",
+"gowalla|full|Recall@20|order|random": "EASE 0.2475 > SimGCL 0.2287 > LightGCN 0.2198 > ItemKNN 0.2029 > BPR-MF 0.1752 > MostPop 0.0442",
+"gowalla|full|gapLG-EASE%|random": -14.2,
+"gowalla|full|NDCG@20|order|loo": "EASE 0.0686 > SimGCL 0.0653 > LightGCN 0.0647 > BPR-MF 0.0540 > ItemKNN 0.0522 > MostPop 0.0192",
+"gowalla|full|Recall@20|order|loo": "EASE 0.1525 > SimGCL 0.1462 > LightGCN 0.1432 > BPR-MF 0.1212 > ItemKNN 0.1168 > MostPop 0.0482",
+"gowalla|full|gapLG-EASE%|loo": -5.6,
+"gowalla|full|NDCG@20|order|global_temporal": "LightGCN 0.0655 > EASE 0.0654 > SimGCL 0.0618 > BPR-MF 0.0563 > ItemKNN 0.0497 > MostPop 0.0224",
+"gowalla|full|Recall@20|order|global_temporal": "EASE 0.1017 > LightGCN 0.0996 > SimGCL 0.0976 > BPR-MF 0.0854 > ItemKNN 0.0793 > MostPop 0.0361",
+"gowalla|full|gapLG-EASE%|global_temporal": 0.1,
+"gowalla|random|train_after_user_first_test_pct": [
+77.48,
+77.23,
+77.7
+],
+"gowalla|random|train_after_global_cut_pct": [
+20.01,
+19.98,
+20.03
+],
+"gowalla|random|test_cold_rows_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|random|val_cold_rows_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|loo|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|loo|train_after_global_cut_pct": [
+17.75,
+17.75,
+17.75
+],
+"gowalla|loo|test_cold_rows_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|loo|val_cold_rows_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|global_temporal|train_after_user_first_test_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|global_temporal|train_after_global_cut_pct": [
+0.0,
+0.0,
+0.0
+],
+"gowalla|global_temporal|test_cold_rows_pct": [
+36.33,
+36.33,
+36.33
+],
+"gowalla|global_temporal|val_cold_rows_pct": [
+20.06,
+20.06,
+20.06
+]
+}

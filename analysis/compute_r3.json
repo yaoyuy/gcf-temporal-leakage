@@ -1,0 +1,94 @@
+{
+ "smoke": {
+  "seconds": 513,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "smokecpu": {
+  "seconds": 28,
+  "status": "complete",
+  "gpu": false,
+  "first_line": "cuda False cpu-session torch 2.11.0+cpu"
+ },
+ "basetune-ml-1m": {
+  "seconds": 568,
+  "status": "complete",
+  "gpu": false,
+  "first_line": "cuda False cpu-session torch 2.11.0+cpu"
+ },
+ "basetune-gowalla": {
+  "seconds": 3745,
+  "status": "complete",
+  "gpu": false,
+  "first_line": "cuda False cpu-session torch 2.11.0+cpu"
+ },
+ "rerun-ml-1m": {
+  "seconds": 4549,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "rerun-gowalla": {
+  "seconds": 5027,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "basetune-amz-music": {
+  "seconds": 19138,
+  "status": "complete",
+  "gpu": false,
+  "first_line": "cuda False cpu-session torch 2.11.0+cpu"
+ },
+ "basetune-amz-games": {
+  "seconds": 12219,
+  "status": "complete",
+  "gpu": false,
+  "first_line": "cuda False cpu-session torch 2.11.0+cpu"
+ },
+ "rerun-amz-music": {
+  "seconds": 6391,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "rerun-amz-games": {
+  "seconds": 11739,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "new-ml-1m": {
+  "seconds": 2216,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "new-gowalla": {
+  "seconds": 2346,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "new-amz-music": {
+  "seconds": 4666,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "new-amz-games": {
+  "seconds": 7059,
+  "status": "complete",
+  "gpu": true,
+  "first_line": "cuda True Tesla T4 torch 2.11.0+cu128"
+ },
+ "_totals": {
+  "gpu_s_results": 43993,
+  "gpu_h_results": 12.22,
+  "gpu_s_smoke": 513,
+  "gpu_h_incl_smoke": 12.36,
+  "cpu_s_results": 35670,
+  "cpu_h_results": 9.91
+ }
+}

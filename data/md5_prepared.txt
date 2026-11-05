@@ -1,0 +1,3 @@
+f3b45020847c0a3dc9a2abd045837219  amz-games.csv
+5e0921b4863bb936b95b9a1235ac48b8  amz-music.csv
+fc3b82e847ba2f1fac53aa302c46a60f  gowalla.csv
